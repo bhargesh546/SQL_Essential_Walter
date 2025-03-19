@@ -1,0 +1,28 @@
+# In our local laptop or computer device open git bash 
+
+# change the directory to the folder containing the database file
+cd /path/to/your/database-folder
+
+# setting up the account
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+# Initializing Git in the directory
+git init
+
+# Adding the file
+git add database.db
+
+git commit -m "Added SQLite database"
+
+# Connecting to the GitHub repository
+git remote add origin https://github.com/username/SQL_Essential_Walter.git 
+
+# Ensure the branch is named 'main' (if not already set)
+git branch -M main
+
+# If you're on a different branch, switch to main using
+git checkout main
+
+# push
+git push -u origin main
